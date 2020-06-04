@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tip Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="mystyle.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="myscript.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <strong><i> Tip Calculator</i></strong>
+    
+  </a>
+</nav>
+
+<div class="container">
+    <h2>Welcome to the Tip Calculator</h2>
+    <p>Enter the following Details to calculate the tip.</p>
+    <form>
+        <h5>How much was the total bill?</h5>
+        $ <input type="text" id='totalBill' height="auto" placeholder="Bill Amount($)"><br>
+        <h5>How many of you are present?</h5>
+        <input type="text" id='numPeople' placeholder="Number of People"><br>
+        <select id="quality">
+            <option disbled section value="0">--Choose Satisfaction--</option>
+            <option value="0.3">30&#37;&#45; Very Satisfied</option>
+            <option value="0.2">20&#37;&#45; Satisfied</option>
+            <option value="0.15">15&#37;&#45; Average</option>
+            <option value="0.10">10&#37;&#45; Dissatisfied</option>
+            <option value="0.05">5&#37;&#45; Very Dissatisfied</option>
+        </select><br>
+        <button class="btn mt-3" onclick="calculateTip()">Calculate Tip!</button>
+    </form>
+    <div id="totalTip">
+        <h3>Tip Amount</h3>
+        <sup>$</sup><span id='tip'>0.00</span>
+        <small id='each'>each</small>
+    </div>
+</div>
+</body>
+</html>

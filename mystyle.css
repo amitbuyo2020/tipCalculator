@@ -1,0 +1,46 @@
+body {
+    background-color: snow;
+    color: #000000;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2 {
+    color: lavender;
+    font-style: italic;
+    border: 2px solid;
+    margin-top: 4px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #009879;
+}
+.btn {
+    color: #ffffff;
+    background-color: #009879;
+    font-size: large;
+}
+
+form {
+    border: 2px solid gray;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    box-shadow: 2px 5px 5px 1px gray;
+    color: #000000;
+    padding-bottom: 1rem;
+}
+
+#quality {
+    margin-top: 1rem;
+}
+h3 {
+    margin: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+#tip {
+    font-weight: normal;
+    font-style: oblique;
+    font-size: 1.2rem;
+    
+}
